@@ -11,12 +11,16 @@ alias .....="cd ../../../../"
 alias g="git"
 alias gst="git status"
 alias gpl="git pull --rebase"
-alias gpom="git push -u origin master"
+alias gpom="git push -u origin master"    # Git - push master branch shortcut
+alias gpocb="git push -u origin HEAD"     # Git - push current branch shortcut
 alias gba="git branch -a"
 alias gla="git log --oneline --decorate --all --graph"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias wip="git add . && git commit -m 'wip'"
 alias nah="git reset --hard && git clean -df"
+alias gdiff:1="git diff --name-only HEAD HEAD~1"
+alias gdiff:2="git diff --name-only HEAD HEAD~2"
+alias gdiff:3="git diff --name-only HEAD HEAD~3"
 
 
 # PHP and Laravel aliases
