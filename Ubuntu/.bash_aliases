@@ -1,43 +1,34 @@
-# OS aliases
-alias _="sudo"
-alias cls="clear"
-alias ..="cd ../"
-alias ...="cd ../../"
-alias ....="cd ../../../"
-alias .....="cd ../../../../"
-
+# spark aliases
+alias spark-shell="/home/mreza/Programms/spark-3.1.1-bin-hadoop2.7/bin/spark-shell"
+alias pyspark="/home/mreza/Programms/spark-3.1.1-bin-hadoop2.7/bin/pyspark"
+alias spark-submit="/home/mreza/Programms/spark-3.1.1-bin-hadoop2.7/bin/spark-submit"
 
 # git aliases
 alias g="git"
 alias gst="git status"
-alias gpl="git pull --rebase"
-alias gpom="git push -u origin master"    # Git - push master branch shortcut
-alias gpocb="git push -u origin HEAD"     # Git - push current branch shortcut
-alias gba="git branch -a"
+alias git-changed-files="git diff-tree --no-commit-id --name-only -r"
+alias gl1="git log --oneline"
 alias gla="git log --oneline --decorate --all --graph"
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias wip="git add . && git commit -m 'wip'"
-alias nah="git reset --hard && git clean -df"
-alias gdiff:1="git diff --name-only HEAD HEAD~1"
-alias gdiff:2="git diff --name-only HEAD HEAD~2"
-alias gdiff:3="git diff --name-only HEAD HEAD~3"
+alias gwip="git add . && git commit -m 'wip'"
+alias gnah="git reset --hard && git clean -df"
 
+# conda aliases
+alias ca="conda activate"
+alias cda="conda deactivate"
 
-# PHP and Laravel aliases
-alias art="php artisan"
-alias migrate="php artisan migrate"
-alias serve="php artisan serve"
-alias tinker="php artisan tinker"
-alias lara_new_5.4="composer create-project --prefer-dist laravel/laravel blog '5.4.*'"
-alias lara_new_5.3="composer create-project --prefer-dist laravel/laravel blog '5.3.*'"
-alias lara_new_5.2="composer create-project --prefer-dist laravel/laravel blog '5.2.*'"
+# python aliases
+alias jn="jupyter notebook"
 
+# expressvpn aliases
+alias expcon="expressvpn connect"
+alias expdis="expressvpn disconnect"
+alias expstat="expressvpn status"
 
-# npm aliases
-alias npinit="npm init -y"
-alias nps="npm start"
-alias npd="npm run dev"
-alias npb="npm run build"
-
-
-
+# linux commands aliases
+alias wifi-reset="nmcli networking off && nmcli networking on"
+alias alternate="sudo update-alternatives --config"
+alias ..="cd ../"
+alias ...="cd ../../"
+alias ....="cd ../../../"
+alias .....="cd ../../../../"
