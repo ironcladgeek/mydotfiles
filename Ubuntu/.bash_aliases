@@ -1,7 +1,7 @@
 # spark aliases
-alias spark-shell="/home/mreza/Programms/spark-3.1.1-bin-hadoop2.7/bin/spark-shell"
-alias pyspark="/home/mreza/Programms/spark-3.1.1-bin-hadoop2.7/bin/pyspark"
-alias spark-submit="/home/mreza/Programms/spark-3.1.1-bin-hadoop2.7/bin/spark-submit"
+alias spark-shell="$HOME/Programms/spark-3.1.1-bin-hadoop2.7/bin/spark-shell"
+alias pyspark="$HOME/Programms/spark-3.1.1-bin-hadoop2.7/bin/pyspark"
+alias spark-submit="$HOME/Programms/spark-3.1.1-bin-hadoop2.7/bin/spark-submit"
 
 # git aliases
 alias g="git"
