@@ -14,6 +14,7 @@ Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}	" Semantic Highlighting f
 Plug 'sbdchd/neoformat' 				" Code auto-format plugin
 Plug 'davidhalter/jedi-vim'				" Auto-completion plugin for Python
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}	" Multiple cursor editing plugin
+Plug 'tpope/vim-fugitive'				" Git wrapper plugin
 
 call plug#end()
 
