@@ -2,17 +2,18 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " auto-completion for various languages
-Plug 'deoplete-plugins/deoplete-jedi'	" auto-completion for Python 
-Plug 'vim-airline/vim-airline'		" Status bar plugin
-Plug 'vim-airline/vim-airline-themes'	" Automatic quote and bracket completion
-Plug 'jiangmiao/auto-pairs'
-Plug 'preservim/nerdcommenter'		" Comment plugin
-Plug 'preservim/nerdtree'		" File managing and exploration plugin
-Plug 'morhetz/gruvbox'			" Color theme
-Plug 'joshdick/onedark.vim'		" Color theme
-Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
-Plug 'sbdchd/neoformat' 		" Code auto-format plugin
-Plug 'davidhalter/jedi-vim'		" Auto-completion plugin
+Plug 'deoplete-plugins/deoplete-jedi'			" Auto-completion for Python 
+Plug 'vim-airline/vim-airline'				" Status bar plugin
+Plug 'vim-airline/vim-airline-themes'			" air-line themes
+Plug 'jiangmiao/auto-pairs'				" Automatic quote and bracket completion
+Plug 'preservim/nerdcommenter'				" Comment plugin
+Plug 'preservim/nerdtree'				" File managing and exploration plugin
+Plug 'morhetz/gruvbox'					" Color theme
+Plug 'joshdick/onedark.vim'				" Color theme
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}	" Semantic Highlighting for Python in Neovim
+Plug 'sbdchd/neoformat' 				" Code auto-format plugin
+Plug 'davidhalter/jedi-vim'				" Auto-completion plugin for Python
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}	" Multiple cursor editing plugin
 
 call plug#end()
 
@@ -42,3 +43,4 @@ let g:jedi#use_splits_not_buffers = "right"
 syntax on
 colorscheme onedark 	" one of the: gruvbox onedark
 set background=dark
+set number 		" Show line numbers
