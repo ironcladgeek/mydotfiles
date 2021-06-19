@@ -15,6 +15,8 @@ Plug 'sbdchd/neoformat' 				" Code auto-format plugin
 Plug 'davidhalter/jedi-vim'				" Auto-completion plugin for Python
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}	" Multiple cursor editing plugin
 Plug 'tpope/vim-fugitive'				" Git wrapper plugin
+Plug 'SirVer/ultisnips'					" Snippet engine for Vim
+Plug 'honza/vim-snippets'				" vim-snipmate default snippets
 
 call plug#end()
 
@@ -40,6 +42,17 @@ let g:deoplete#enable_at_startup = 1
 let g:airline_theme='onedark'
 " open the go-to function in split, not another buffer
 let g:jedi#use_splits_not_buffers = "right"
+" Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
+" - https://github.com/Valloric/YouCompleteMe
+" - https://github.com/nvim-lua/completion-nvim
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsListSnippets="<c-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 
 syntax on
 colorscheme onedark 	" one of the: gruvbox onedark
