@@ -1,15 +1,18 @@
 " Plugins
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'deoplete-plugins/deoplete-jedi'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " auto-completion for various languages
+Plug 'deoplete-plugins/deoplete-jedi'	" auto-completion for Python 
+Plug 'vim-airline/vim-airline'		" Status bar plugin
+Plug 'vim-airline/vim-airline-themes'	" Automatic quote and bracket completion
 Plug 'jiangmiao/auto-pairs'
-Plug 'preservim/nerdcommenter'
-Plug 'preservim/nerdtree'
-Plug 'joshdick/onedark.vim'
+Plug 'preservim/nerdcommenter'		" Comment plugin
+Plug 'preservim/nerdtree'		" File managing and exploration plugin
+Plug 'morhetz/gruvbox'			" Color theme
+Plug 'joshdick/onedark.vim'		" Color theme
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
+Plug 'sbdchd/neoformat' 		" Code auto-format plugin
+Plug 'davidhalter/jedi-vim'		" Auto-completion plugin
 
 call plug#end()
 
@@ -33,6 +36,9 @@ endif
 
 let g:deoplete#enable_at_startup = 1
 let g:airline_theme='onedark'
+" open the go-to function in split, not another buffer
+let g:jedi#use_splits_not_buffers = "right"
 
 syntax on
-colorscheme onedark
+colorscheme onedark 	" one of the: gruvbox onedark
+set background=dark
