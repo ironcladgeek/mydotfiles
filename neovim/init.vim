@@ -17,6 +17,7 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}	" Multiple cursor editing pl
 Plug 'tpope/vim-fugitive'				" Git wrapper plugin
 Plug 'SirVer/ultisnips'					" Snippet engine for Vim
 Plug 'honza/vim-snippets'				" vim-snipmate default snippets
+Plug 'tpope/vim-eunuch'					" Helpers for UNIX
 
 call plug#end()
 
@@ -58,3 +59,18 @@ syntax on
 colorscheme onedark 	" one of the: gruvbox onedark
 set background=dark
 set number 		" Show line numbers
+
+"""""""""""""" custom commands 
+""" moving lines
+" Normal mode
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+
+" Insert mode
+inoremap <C-j> <ESC>:m .+1<CR>==gi
+inoremap <C-k> <ESC>:m .-2<CR>==gi
+
+" Visual mode
+vnoremap <C-j> :m '>+1<CR>gv=gv
+vnoremap <C-k> :m '<-2<CR>gv=gv
+
